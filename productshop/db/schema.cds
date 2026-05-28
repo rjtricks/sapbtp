@@ -1,3 +1,4 @@
+//this must give to identify diffrence between 2 apps table(Entities) and DB table(Entities) in case of same name
 namespace sap.cap.productshop;
 
 entity Product {
