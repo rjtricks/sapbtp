@@ -1,1 +1,3 @@
 http://localhost:4004/odata/v4/shop/Product
+
+http://localhost:4004/odata/v4/shop/Order
