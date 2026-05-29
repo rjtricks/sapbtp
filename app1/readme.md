@@ -22,12 +22,12 @@ File or Folder | Purpose
 Learn more at <https://cap.cloud.sap>.
 
 ## Expand Example
-## get expanded data
+
+get expanded data
 GET http://localhost:4004/odata/v4/shop/Product?$expand=order
 
 ![alt text](image.png)
 
 GET http://localhost:4004/odata/v4/shop/Order?$expand=products
 
-output - 
 ![alt text](image-1.png)
