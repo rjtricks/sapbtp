@@ -1,3 +1,3 @@
-Name,Price,Category,Date_mfgDate,Date_expDate,order_OrderID,isFMCG
-Colgate,78,Toothpaste,2024-09-21,2027-09-21,67,true
-ColgateMaxfresh,98,Toothpaste,2024-09-25,2027-09-25,67,true
+ID,Name,Price,Category,Date_mfgDate,Date_expDate,order_OrderID,isFMCG
+a7c41177-3bac-46bb-9eab-36889398bc9b,Colgate,78,Toothpaste,2024-09-21,2027-09-21,67,true
+cf2b5e39-222d-4e15-bc97-5bbbc4d26372,ColgateMaxfresh,98,Toothpaste,2024-09-25,2027-09-25,67,true

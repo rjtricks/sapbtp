@@ -25,7 +25,13 @@ entity Product : cuid, managed, FMCG
     Category : String;
     Date : Dates;
     order : Association to one Order;
-}
+   complaint : Composition of many {
+        key ComplaintID : Integer;
+        Description : String;
+        Raisedby : String;
+        Date : Date;
+    }
+   }
 
 entity Order
 {

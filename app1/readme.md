@@ -32,9 +32,13 @@ GET http://localhost:4004/odata/v4/shop/Order?$expand=products
 
 ![alt text](image-1.png)
 
-### Select Example for Quantity
+### Select Example for Select - Quantity
 
 GET http://localhost:4004/odata/v4/shop/Order?$expand=products&$select=Quantity
 
 ![alt text](image-2.png)
 
+### Composition Example for Complaint
+GET http://localhost:4004/odata/v4/shop/Product?$expand=complaint
+
+![alt text](image-3.png)
