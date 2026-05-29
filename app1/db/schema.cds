@@ -1,20 +1,30 @@
 namespace sap.cap.app1;
-//automatically generated id using cuid
-using {cuid,managed} from '@sap/cds/common'; // THIS WILL CALL FROM @SAP/CDS/COMMON.CDS
 
-aspect FMCG {
+using
+{
+    cuid,
+    managed
+}
+from '@sap/cds/common';
+
+aspect FMCG
+{
     isFMCG : Boolean;
 }
-type Dates {
+
+type Dates
+{
     mfgDate : Date;
     expDate : Date;
 }
-entity Product : cuid,FMCG,managed // pass here for cuid and aspect FMCG
+
+entity Product : cuid, managed, FMCG
 {
     Name : String;
     Price : Integer;
     Category : String;
     Date : Dates;
+    order : Association to one Order;
 }
 
 entity Order
@@ -23,4 +33,6 @@ entity Order
     Quantity : Integer;
     OrderDate : Date;
     ProductID : Integer;
+    newProperty : String(100);
+    products : Association to many Product on products.order = $self;
 }

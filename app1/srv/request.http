@@ -1,22 +1,7 @@
 
-
-POST http://localhost:4004/odata/v4/shop/Product
-Content-Type: application/json
-
-{
-  "isFMCG": true,
-  "ID": 2,
-  "Name": "rtts",
-  "Price": 45,
-  "Category": "New",
-  "Date_mfgDate": "2024-03-23",
-  "Date_expDate": "2027-09-23"
-}
-
-GET http://localhost:4004/odata/v4/shop/Product
-
 GET http://localhost:4004/odata/v4/shop/Order
 
+GET http://localhost:4004/odata/v4/shop/Product
 POST http://localhost:4004/odata/v4/shop/Product
 Content-Type: application/json
     {
@@ -28,4 +13,7 @@ Content-Type: application/json
       "Date_mfgDate": "2024-03-23",
       "Date_expDate": "2027-09-23"
     }
+
+    // get expanded data
+GET http://localhost:4004/odata/v4/shop/Product?$expand=order
 
