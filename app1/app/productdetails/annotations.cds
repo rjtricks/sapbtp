@@ -5,7 +5,7 @@ annotate service.Product with @(
         Data : [
             {
                 $Type : 'UI.DataField',
-                Label : 'ID',
+                Label : 'UUID',
                 Value : ID,
             },
             {
@@ -26,12 +26,12 @@ annotate service.Product with @(
             {
                 $Type : 'UI.DataField',
                 Label : 'MfgDate',
-                Value : MfgDate,
+                Value : Date_mfgDate,
             },
             {
                 $Type : 'UI.DataField',
                 Label : 'ExpDate',
-                Value : ExpDate,
+                Value : Date_expDate,
             },
         ],
     },
